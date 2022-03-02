@@ -10,13 +10,13 @@ export const Header = (props) => {
           <div className='container'>
             <div className='row'>
               <div className='col-md-8 col-md-offset-2 intro-text'>
-                <h2 className="text-white pull-left">
+                <h2 className="  stokesRed text-white pull-left">
                   {props.data ? props.data.title : 'Loading'}
                 </h2>
-                <h1 className="text-rubyred">
+                <h1 className=" stokesWhite text-rubyred">
                    {props.data ? props.data.title1 : 'Loading'}
                 </h1>
-                <h2 className="text-white pull-right">
+                <h2 className="stokesRed text-white pull-right">
                 {props.data ? props.data.title2 : 'Loading'}
                 </h2>
                 <div className="pt-3">
@@ -45,29 +45,27 @@ export const Header = (props) => {
       <div className='intro1 intros'>
         <div className='overlay'>
           <div className='container'>
-            <div className='row'>
+          <div className='row'>
               <div className='col-md-8 col-md-offset-2 intro-text'>
-                <h2 className=" transparent">
-                  {props.data ? props.data.title : 'Loading'}
+                <h2 className=" exampleText   text-rubyred pull-left">
+                  {props.data ? props.data.title4 : 'Loading'}
                 </h2>
-                <h1 className=" transparent">
+                {/* <h1 className="text-white">
                    {props.data ? props.data.title1 : 'Loading'}
                 </h1>
-                <h2 className="transparent">
+                <h2 className="text-white pull-right">
                 {props.data ? props.data.title2 : 'Loading'}
-                </h2>
-                <div className="pt-3 transparent">
-                <p className="transparent">{props.data ? props.data.paragraph : 'Loading'}</p>
-                </div>
+                </h2> */}
                 <a
                   href='#features'
-                  className='btn btn-custom btn-lg btn-bg-color page-scroll'
+                  className='btn btn-custom btn-bg-color btn-lg page-scroll'
                 >
-                   <div>
+                  <div>
                     <span className="contact-details text-white">
                       <i className='fa fa-phone text-orange1'></i> +91 94883 43729
                     </span>
                   </div>
+
                 </a>{' '}
               </div>
             </div>
