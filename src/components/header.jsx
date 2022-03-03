@@ -1,6 +1,8 @@
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import parse from 'html-react-parser';
 import { Carousel } from 'react-responsive-carousel';
 export const Header = (props) => {
+  const Brands = props.data &&  props.data.title4;
   return (
     <Carousel>
     <div>
@@ -47,8 +49,8 @@ export const Header = (props) => {
           <div className='container'>
           <div className='row'>
               <div className='col-md-8 col-md-offset-2 intro-text'>
-                <h2 className=" exampleText   text-rubyred pull-left">
-                  {props.data ? props.data.title4 : 'Loading'}
+                <h2 className="text-white pull-left">
+                {Brands ? parse(Brands) : 'Loading'}
                 </h2>
                 {/* <h1 className="text-white">
                    {props.data ? props.data.title1 : 'Loading'}
